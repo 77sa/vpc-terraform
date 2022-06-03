@@ -5,7 +5,6 @@ Note: This configuration depends on the VPC in 1-vpc. You can comment out the da
 1. Run terraform init & apply
 2. Pick one of the public IPs from the output and run:
     ```shell
-    $ chmod 400 private_key.pem
     $ ssh -i private_key.pem ec2-user@<IP>
     ```
 3. Running this from the public instance should give you a similar output:
